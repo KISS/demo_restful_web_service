@@ -1,0 +1,23 @@
+{
+  "name": "rest-api-docker",
+  "version": "1.0.0",
+  "description": "CS 612 Project: Demo RESTful Web Service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KISS/demo_restful_web_service.git"
+  },
+  "author": "luisamariethm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KISS/demo_restful_web_service/issues"
+  },
+  "homepage": "https://github.com/KISS/demo_restful_web_service#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
