@@ -20,9 +20,9 @@ app.get('/animals/:id', (req, res) => {
       const animals = json.animals;
       let result = undefined;
 
-      for (animal of animals) {
-        if (animal.id == req.params.id)
-          result = animal;
+      for (val in animals) {
+        if (animals[val].id == req.params.id)
+          result = animals[val];
       }
 
       if (result)
@@ -33,7 +33,7 @@ app.get('/animals/:id', (req, res) => {
   });
 });
 
-app.get('*', (req, res) => res.status('404').send('404: Not Found'));
+app.get('*', (req, res) => res.status('404').send("404: Not Found. This endpoint isn't supported."));
 
 app.listen(3000, () => {
   console.log('REST API running on Port 3000');

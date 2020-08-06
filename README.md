@@ -1,6 +1,8 @@
 # Demo RESTful Web Service using Node, Docker, JSON
 
-This is a REST API created for a CS 612 assignment.
+A demo REST API created as part of my "Concepts and Structures in Internet Computing" coursework.
+
+JSON is used as the data model.
 
 ## Data Model:
 
@@ -34,18 +36,18 @@ You can utilize two `GET` endpoints:
 
 [1] `/animals` - returns the full JSON object
 
-[2] `/animals:id` - returns the animal object for the `id` requested
+[2] `/animals/:id` - returns the animal object for the `id` requested
 
 ## Setup Instructions
 
-[without Docker]
+[Without Docker]
 - Clone or download the repo
 - `cd` into the project root directory
 - Run `npm install` to install all dependencies
 - Run `npm run start` to start the server and build the service
 - Go to `http://localhost:3000/[endpoint]` to view the data you want
 
-[with Docker]
+[With Docker]
 - Clone or download the repo
 - `cd` into the project root directory
 - Install Docker if you don't already have it: visit installation instructions for [Mac](https://docs.docker.com/docker-for-mac/install/) or [Windows](https://docs.docker.com/docker-for-windows/install/)
